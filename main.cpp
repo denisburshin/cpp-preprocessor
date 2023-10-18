@@ -89,9 +89,9 @@ void Test()
 {
     error_code err;
     filesystem::remove_all("sources"_p, err);
-    //filesystem::create_directories("sources"_p / "include2"_p / "lib"_p, err);
+    filesystem::create_directories("sources"_p / "include2"_p / "lib"_p, err);
     filesystem::create_directories("sources"_p / "include1"_p, err);
-    //filesystem::create_directories("sources"_p / "dir1"_p / "subdir"_p, err);
+    filesystem::create_directories("sources"_p / "dir1"_p / "subdir"_p, err);
 
     {
         ofstream file("sources/a.cpp");
